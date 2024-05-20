@@ -1,0 +1,57 @@
+.containe{
+padding: 80px;
+margin: auto;
+background:  #2d2e32;
+}
+.counter-row{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background: #25262a;;
+    border-radius: 100px;
+}
+.col-md-3{
+    width: 33%;
+    gap: 10px;
+    border: 5px solid #2d2e32
+}
+.counter-box {
+	display: block;
+	padding: 150px 60px 60px;
+	text-align: center;height: 280px;
+    align-items: center;
+}
+.counter-box span {
+	margin: 5px 0 0;
+	padding: 60px 30px;
+	color: #64f4ab;
+	font-size: 130px;
+	font-weight: 900
+}
+.counter-box p {
+	margin: 5px 0 0;
+	padding: 0;
+	color: white ;
+	font-size: 38px;
+	font-weight: 500
+}
+
+
+
+.counter { 
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+	color: #666;
+	line-height: 28px
+}
+
+.counter-box.colored {
+      background: #3acf87;
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+	color: #fff
+}

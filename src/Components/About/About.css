@@ -1,0 +1,109 @@
+.about{
+    background: #2d2e32;
+    height: 150vh;
+    justify-content: s;
+    align-items: center;
+    padding: 100px 0px 50px 0px;
+   
+}
+.about .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .row .col-lg-6{
+    width: 50%;
+    margin: 20px;
+}
+
+.about .row .col-lg-6 .card{
+    width: 100%;
+    background: #25262a;
+    border-radius: 10%;
+    text-align: center;
+    padding: 10px 0px;
+   
+}
+.about .row .col-lg-6 .card:hover{
+    width: 100%;
+    background: linear-gradient(191deg,#64f4ab 0%, #327a56 100%);
+    border-radius: 10%;
+    text-align: center;
+    padding: 10px 0px;
+    box-shadow: #64f4ab 20px #327a56 20px 10px;
+}
+.about .row .col-lg-6 .card i{
+    padding: 45px 45px;
+    margin: 70px auto 0px auto;
+  font-size: 50px;
+ border: 1px solid  #64f4ab;
+ border-radius: 100%;
+ color: #64f4ab;;
+    background: #2d2e32;
+}
+.about .row .col-lg-6 .card i:hover{
+    padding: 45px 45px;
+    margin: 70px auto 0px auto;
+  font-size: 50px;
+ border: 1px solid  #64f4ab;
+ border-radius: 100%;
+ color: #d8f3e5;;
+    background: linear-gradient(191deg,#64f4ab 0%, #327a56 100%);
+}
+.about .row .col-lg-6 .card h2{
+    font-family: Arial, Helvetica, sans-serif;
+ font-size: 35px;
+ color: white;
+    font-weight: 800;
+}
+.about .row .col-lg-6 .card p{
+    font-family: Arial, Helvetica, sans-serif;
+ font-size:29px;
+ color: white;
+    padding: 10px 50px 50px 50px;
+    line-height: 45px;
+}
+.about-text{
+    width: 80%;
+    margin: auto;
+}
+.about-text span{
+    font-size: 25px;
+    color: #64f4ab;
+    margin:0px 50px 0px 50px ;
+}
+.about-text span::after{
+    content: "";
+    position: relative;
+    top:-15px;
+    left: 12px;
+    display: block;
+    height: 3px;
+    width: 25px;
+    background: #64f4ab;
+    color: #64f4ab;
+}
+.about-text h1{
+    font-size: 70px;
+    color: white;
+    padding: 10px 50px 5px 50px;
+}
+.about-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:29px;
+    color: white;
+    padding: 0px 50px 20px 50px;
+    line-height: 45px;
+}
+.about-text button{
+    background-color: transparent;
+    background-image: linear-gradient(91deg,#fecd1a 0%, #ffaf29 100%);
+   color: #25262a;
+   padding: 18px 35px;
+   font-size: 30px;
+   font-weight: 400;
+   border-radius: 30px;
+   width: 300px;
+   margin:0px 50px 20px 50px ;
+   height: 90px;
+}

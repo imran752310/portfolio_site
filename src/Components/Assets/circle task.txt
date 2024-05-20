@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+    background:#25262a;
+    }
+    .circle-container {
+      position: relative;
+      width: 600px; /* Adjust the size of the circle */
+      height: 600px; /* Adjust the size of the circle */
+      background-color: #64f4ab;; /* Adjust the background color */
+      border-radius: 50%;
+    }
+
+    .circle-container::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%; /* Adjust the size of the circle */
+      height: 80%; /* Adjust the size of the circle */
+      background-color: #25262a;; /* Adjust the background color */
+      border-radius: 50%;
+    transition: width 2s;
+    }
+  </style>
+</head>
+<body>
+
+<div class="circle-container"></div>
+
+</body>
+</html>

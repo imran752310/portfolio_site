@@ -1,0 +1,37 @@
+.Testimonial{
+    background: #2d2e32;    ;
+}
+.test_row{
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 40px 0px;
+    gap: 80px;
+}
+.text-col-6 img{
+    border-radius: 80px;
+}
+.test-text{
+    padding:20px  0px 30px 40px ;
+    color: white;
+}
+.test-text p{
+    font-size: 45px;
+    color: white;
+}
+.test-text h3{
+    font-size: 40px;
+    color: #64f4ab;
+    font-weight: 400;
+}
+.test-text i{
+ 
+    color: #64f4ab;
+    font-weight: 400;
+}
+.test-text h5{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+}

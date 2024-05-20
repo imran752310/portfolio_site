@@ -1,0 +1,74 @@
+.navbar{
+    background: #25262a;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    align-items: center;
+}
+.navbar img{
+    width: 220px;
+    padding: 20px 15px;
+}
+.navbar .nav{
+    display: flex;
+    justify-content: flex-start;
+}
+.navbar .nav ul{
+    margin: 20px 50px;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+}
+.navbar .nav ul li{
+    list-style: none;
+    font-size: 28px;
+    padding: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.navbar .nav-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.navbar .nav-right button{
+    background-color: transparent;
+    background-image: linear-gradient(91deg,#fecd1a 0%, #ffaf29 100%);
+   color: #25262a;
+   padding: 18px 35px;
+   font-size: 30px;
+   font-weight: 400;
+   border-radius: 30px;
+   width: 300px;
+   height: 90px;
+}
+.navbar .nav-right .lable {
+    background-color: transparent;
+    color: #ffaf29 ;
+   background: #2e2f32;
+   font-size: 30px;
+   font-weight: 400;
+   border-radius: 30px;
+   width: 90px;
+   height: 90px;
+   margin: 0px 50px;
+   border: none;
+}
+.navbar .nav-right .lable:hover {
+  
+    background-color: transparent;
+    background-image: linear-gradient(91deg,#fecd1a 0%, #ffaf29 100%);
+   color: #25262a;
+   
+   font-size: 30px;
+   font-weight: 400;
+   border-radius: 30px;
+   width: 90px;
+   height: 90px;
+   transition: 3.0s;
+}
