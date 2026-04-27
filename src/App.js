@@ -6,21 +6,25 @@ import Home from './Pages/Home';
 import Portfolio from './Pages/Portfolio';
 import Contact from './Pages/Contact';
 import Footer from './Components/Footer/Footer';
+import { ThemeProvider } from './ThemeContext';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
-    <div>
+    <ThemeProvider>
       <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/Portfolio' element={<Portfolio/>}/>
-        <Route path='/Contact' element={<Contact/>}/>
-      </Routes>
-      <Footer/>
+        <ScrollToTop />
+        <Navbar />
+        <main className="page-fade-in">
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/Portfolio' element={<Portfolio/>}/>
+            <Route path='/Contact' element={<Contact/>}/>
+          </Routes>
+        </main>
+        <Footer/>
       </BrowserRouter>
-      
-    </div>
+    </ThemeProvider>
   );
 }
 

@@ -1,86 +1,145 @@
-.contact{
-    background: #2d2e32;;
-}
-.contact_row{
-    width: 90%;
-    margin: auto;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.contact_row .contact_col_1{
-    width: 50%;
-    padding: 20px;
-}
-.contact_row .contact_col_1 span{
-    font-size: 28px;
-    color: #64f4ab;
-    padding: 0px 10px;
+.contact-section {
+    padding: 160px 8% 100px;
+    background-color: var(--bg-primary);
+    min-height: 100vh;
 }
 
-.contact_row .contact_col_1 span::after{
-    content: "";
-    position: relative;
-    top:-17px;
-    left: -18px;
-    display: block;
-    height: 3px;
-    width: 25px;
-    background: #64f4ab;
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
 }
-.contact_row .contact_col_1 h1{
-    font-size: 60px;
-    font-family:Arial, Helvetica, sans-serif;
+
+.contact-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--text-main);
+    margin-bottom: 2rem;
+}
+
+.contact-desc {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 500px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--accent);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.contact-item h4 {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.contact-item p {
+    font-weight: 600;
+    color: var(--text-main);
+    font-size: 1.1rem;
+}
+
+/* Form Styling */
+.contact-form-wrapper {
+    background: var(--bg-card);
+    backdrop-filter: var(--glass-blur);
+    padding: 3rem;
+    border-radius: 30px;
+    border: 1px solid var(--border);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+.premium-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.form-group input, .form-group textarea {
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    color: var(--text-main);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.submit-btn {
+    margin-top: 1rem;
+    background: var(--accent);
     color: white;
-}
-
-.contact_row .contact_col_1 p{
-    color: #ecf2fd;
-    font-size: 35px;
-    font-weight: 300;
-    line-height: 46px;
-    margin: 0;
-    max-width: 647px;
-}
-.contact_row .contact_col_2{
-    width: 50%;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px var(--accent-glow);
 }
 
-.contact_row .contact_col_2 .flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px var(--accent-glow);
 }
 
-.contact_row .contact_col_2 .flex input{
-    width: 300px;
-    justify-content: space-between;
-   padding: 30px;
-   border-radius: 20px;
-   border: 1px solid #64f4ab;
-   background: #222325; 
-   margin: 20px 30px 20px 0px;
+@media (max-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .contact-section {
+        padding-top: 120px;
+    }
 }
-
-.contact_row .contact_col_2 .flex input::placeholder{
-    color: #ecf2fd;
-}
-.contact_row .contact_col_2 .flex .text{
-   border-radius: 30px;
-   
-}
-.contact_col_2 .flex .btn{
-  background-color: transparent;
-   background-image: linear-gradient(91deg,#fecd1a 0%, #ffaf29 100%);
-   color: #25262a;
-   padding: 18px 35px;
-   font-size: 30px;
-   font-weight: 400;
-   border-radius: 30px;
-   width: 300px;
-   height: 90px;
- }

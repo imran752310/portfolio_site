@@ -4,23 +4,31 @@ import './Testimonial.css'
 
 const Testimonial = () => {
   return (
-    <div className='Testimonial'>
-        <div className="test_row">
-            <div className="text-col-6">
-                <img src={Testimonial_img} alt="" />
+    <section className='testimonial-section'>
+      <div className="testimonial-container">
+        <div className="testimonial-card">
+          <div className="testimonial-content">
+            <div className="quote-icon">
+              <i className="fa fa-quote-left"></i>
             </div>
-            <div className="text-col-6">
-               <div className='test-text'>
-               <i class="fa fa-quote-left fa-3x"></i>
-               <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!
-                </p>
-                <h3>Amman Payne</h3>
-                <h5>CEO Of Figma</h5>
-               </div>
+            <p className="testimonial-text">
+              "Imran's ability to blend technical architecture with high-end design is truly rare. He transformed our vision into a digital product that exceeded our expectations in both form and function."
+            </p>
+            <div className="testimonial-author">
+              <h3>Amman Payne</h3>
+              <h5>CEO of Figma</h5>
             </div>
+          </div>
+          <div className="testimonial-visual">
+            <div className="author-img-wrapper">
+              <img src="https://mustafatawab.vercel.app/mustafatawabb.png" alt="Amman Payne" />
+              <div className="visual-badge">Client Story</div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
   )
 }
 
-export default Testimonial
+export default Testimonial;

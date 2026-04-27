@@ -1,57 +1,82 @@
-.containe{
-padding: 80px;
-margin: auto;
-background:  #2d2e32;
+.counter-section {
+    padding: 80px 8%;
+    background-color: var(--bg-primary);
 }
-.counter-row{
+
+.counter-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.counter-card {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background: var(--bg-card);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.counter-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
     display: flex;
-    align-items: center;
-    margin: auto;
-    background: #25262a;;
-    border-radius: 100px;
-}
-.col-md-3{
-    width: 33%;
-    gap: 10px;
-    border: 5px solid #2d2e32
-}
-.counter-box {
-	display: block;
-	padding: 150px 60px 60px;
-	text-align: center;height: 280px;
+    justify-content: center;
     align-items: center;
 }
-.counter-box span {
-	margin: 5px 0 0;
-	padding: 60px 30px;
-	color: #64f4ab;
-	font-size: 130px;
-	font-weight: 900
-}
-.counter-box p {
-	margin: 5px 0 0;
-	padding: 0;
-	color: white ;
-	font-size: 38px;
-	font-weight: 500
+
+.suffix {
+    color: var(--accent);
+    margin-left: 2px;
 }
 
-
-
-.counter { 
-	display: block;
-	font-size: 32px;
-	font-weight: 700;
-	color: #666;
-	line-height: 28px
+.counter-label {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.counter-box.colored {
-      background: #3acf87;
+.counter-line {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    opacity: 0.3;
+    transition: width 0.4s ease;
 }
 
-.counter-box.colored p,
-.counter-box.colored i,
-.counter-box.colored .counter {
-	color: #fff
+.counter-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.counter-card:hover .counter-line {
+    width: 60px;
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    .counter-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .counter-container {
+        grid-template-columns: 1fr;
+    }
 }

@@ -1,53 +1,31 @@
 import React from 'react'
 import './Counter.css'
 import CountUp from 'react-countup';
+
+const stats = [
+  { end: 58, label: 'Happy Clients', suffix: '+' },
+  { end: 89, label: 'Projects Done', suffix: '' },
+  { end: 16, label: 'Awards Winning', suffix: '' },
+  { end: 7, label: 'Years Experience', suffix: '+' }
+]
+
 const Counter = () => {
   return (
-    <div>
-        <div className="containe">
-    
-    <div className="counter-row">
-
-	<div className="four col-md-3">
-		<div className="counter-box ">
-			<span className="counter">
-				<CountUp end={58} duration={6}/>
-			</span>
-			<p>Happy Client</p>
-		</div>
-	</div>
-	<div class="four col-md-3">
-		<div class="counter-box">
-			
-			<span className="counter">
-			<CountUp end={89} duration={6}/>
-			</span>
-			<p>Projects Done</p>
-		</div>
-	</div>
-	<div className="four col-md-3">
-		<div className="counter-box">
-			
-			<span className="counter">
-			<CountUp end={16} duration={2}/>
-			</span>
-			<p>Awards Winning
-</p>
-		</div>
-	</div>
-	<div className="four col-md-3">
-		<div className="counter-box">
-		
-			<span className="counter">
-			<CountUp end={9} duration={1}/>	
-			</span>
-			<p>Years Experiecnce</p>
-		</div>
-	</div>
-  </div>	
-</div>
-    </div>
+    <section className="counter-section">
+      <div className="counter-container">
+        {stats.map((stat, index) => (
+          <div key={index} className="counter-card">
+            <div className="counter-number">
+              <CountUp end={stat.end} duration={4} enableScrollSpy scrollSpyOnce />
+              <span className="suffix">{stat.suffix}</span>
+            </div>
+            <div className="counter-label">{stat.label}</div>
+            <div className="counter-line"></div>
+          </div>
+        ))}
+      </div>
+    </section>
   )
 }
 
-export default Counter
+export default Counter;
