@@ -1,4 +1,5 @@
 import React from 'react'
+import Testimonial_img from '../Assets/testimonials-img.jpg';
 import './Testimonial.css'
 
 const Testimonial = () => {
@@ -20,7 +21,7 @@ const Testimonial = () => {
           </div>
           <div className="testimonial-visual">
             <div className="author-img-wrapper">
-              <img src="https://mustafatawab.vercel.app/mustafatawabb.png" alt="Amman Payne" />
+              <img src={Testimonial_img} alt="Amman Payne" />
               <div className="visual-badge">Client Story</div>
             </div>
           </div>
